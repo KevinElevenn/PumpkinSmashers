@@ -41,6 +41,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3054184048200684202}
     m_Modifications:
+    - target: {fileID: 450458081390759224, guid: 3339a026072ef854b87ed81ebf7bd800, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 450458081390759224, guid: 3339a026072ef854b87ed81ebf7bd800, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Name
+      value: World Location
+      objectReference: {fileID: 0}
+    - target: {fileID: 450458081390759224, guid: 3339a026072ef854b87ed81ebf7bd800, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 450458081390759224, guid: 3339a026072ef854b87ed81ebf7bd800, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1957461171318186076, guid: 3339a026072ef854b87ed81ebf7bd800, type: 3}
       propertyPath: m_Name
       value: Fab_VFX_PumkinSplatter
@@ -103,6 +119,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3054184048200684202}
     m_Modifications:
+    - target: {fileID: 4992521669794187344, guid: b493a9902cef0f94ea884283b4391783, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992521669794187344, guid: b493a9902cef0f94ea884283b4391783, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Name
+      value: World Location
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992521669794187344, guid: b493a9902cef0f94ea884283b4391783, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992521669794187344, guid: b493a9902cef0f94ea884283b4391783, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6468151804541507886, guid: b493a9902cef0f94ea884283b4391783, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
