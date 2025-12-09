@@ -4,11 +4,12 @@ using UnityEngine.InputSystem;
 public class PlayerPickUpDrop : MonoBehaviour
 {
 
-    [SerializeField] private Transform _playerCameraTransform;
+    [SerializeField] public Transform PlayerCameraTransform;
     [SerializeField] private Transform objectPickupPointTransform;
     [SerializeField] private LayerMask _pickupLayerMask;
     [SerializeField] private float pickupDistance = 2f;
     [SerializeField] private InputActionAsset InputActions;
+    [SerializeField] public float ThrowForce = 20f;
 
     private ObjectPickupable objectPickupable;
 
@@ -16,9 +17,9 @@ public class PlayerPickUpDrop : MonoBehaviour
     {
         if (objectPickupable == null) {
         Debug.Log("Interacted");
-        Debug.DrawRay(_playerCameraTransform.position, _playerCameraTransform.forward * 2f, Color.red, 2f);
+        Debug.DrawRay(PlayerCameraTransform.position, PlayerCameraTransform.forward * 2f, Color.red, 2f);
         //first asks for what to use, we use a ref to an obj in scene then tells it to look forward
-        if (Physics.Raycast(_playerCameraTransform.position, _playerCameraTransform.forward, out RaycastHit raycastHit, pickupDistance, _pickupLayerMask));
+        if (Physics.Raycast(PlayerCameraTransform.position, PlayerCameraTransform.forward, out RaycastHit raycastHit, pickupDistance, _pickupLayerMask));
             Debug.Log(raycastHit.transform);
             if (raycastHit.transform.TryGetComponent(out objectPickupable))
         {

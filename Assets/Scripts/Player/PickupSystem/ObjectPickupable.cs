@@ -4,6 +4,8 @@ public class ObjectPickupable : MonoBehaviour
 {
     private Rigidbody objectRigidbody;
     private Transform objectPickupPointTransform;
+    private float _throwForce = 55f;
+    
 
     private void Awake()
     {
@@ -17,8 +19,10 @@ public class ObjectPickupable : MonoBehaviour
 
     public void Drop()
     {
-        this.objectPickupPointTransform = null;
         objectRigidbody.useGravity = true;
+        Vector3 forceToAdd = objectPickupPointTransform.transform.forward * _throwForce;
+        objectRigidbody.AddForce(forceToAdd, ForceMode.Impulse);
+        this.objectPickupPointTransform = null;
     }
     private void FixedUpdate()
     {
