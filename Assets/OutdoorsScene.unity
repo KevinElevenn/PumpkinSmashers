@@ -540,6 +540,7 @@ GameObject:
   - component: {fileID: 570683783}
   - component: {fileID: 570683786}
   - component: {fileID: 570683787}
+  - component: {fileID: 570683788}
   m_Layer: 0
   m_Name: Player Character
   m_TagString: Untagged
@@ -760,6 +761,18 @@ MonoBehaviour:
   pickupDistance: 2
   InputActions: {fileID: -944628639613478452, guid: 2e51496ddcc610e4bb30795b3567a2db, type: 3}
   ThrowForce: 5
+--- !u!114 &570683788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570683777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b817724f144ca459a983af848a8b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &806249226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,10 +1134,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1056242029 stripped
+--- !u!1 &965334416 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6031539003678813785, guid: 1a1c6b47afa3c8648afd9eee29bcdc0d, type: 3}
-  m_PrefabInstance: {fileID: 860811134}
+  m_CorrespondingSourceObject: {fileID: 6123029182071923052, guid: 1a1c6b47afa3c8648afd9eee29bcdc0d, type: 3}
+  m_PrefabInstance: {fileID: 8864068150448801101}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1418022019 stripped
 GameObject:
@@ -1528,10 +1541,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b81593cdf489b444a6cbc1c799bee80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Objects:
-  - {fileID: 1056242029}
-  - {fileID: 1418022019}
+  _newObj: {fileID: 0}
+  _pumpkin: {fileID: 0}
   _tagFilter: Breaker
+  _objMaxHP: 10
 --- !u!1001 &2075842148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1642,10 +1655,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3713386203219306603, guid: 1a1c6b47afa3c8648afd9eee29bcdc0d, type: 3}
-      propertyPath: m_ProvidesContacts
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 2741015389849523379, guid: 1a1c6b47afa3c8648afd9eee29bcdc0d, type: 3}
+      propertyPath: _newObj
+      value: 
+      objectReference: {fileID: 1418022019}
+    - target: {fileID: 2741015389849523379, guid: 1a1c6b47afa3c8648afd9eee29bcdc0d, type: 3}
+      propertyPath: _pumpkin
+      value: 
+      objectReference: {fileID: 965334416}
     - target: {fileID: 5396251658447351375, guid: 1a1c6b47afa3c8648afd9eee29bcdc0d, type: 3}
       propertyPath: m_Name
       value: Pumpkin

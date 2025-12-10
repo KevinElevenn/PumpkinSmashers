@@ -9,7 +9,7 @@ public class PlayerPickUpDrop : MonoBehaviour
     [SerializeField] private LayerMask _pickupLayerMask;
     [SerializeField] private float pickupDistance = 2f;
     [SerializeField] private InputActionAsset InputActions;
-    [SerializeField] public float ThrowForce = 20f;
+    [SerializeField] private float ThrowForce = 20f;
 
     private ObjectPickupable objectPickupable;
 
