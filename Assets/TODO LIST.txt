@@ -1,11 +1,15 @@
 TODO
 
-//1 3d Character Working FPS
-//2 Gameplay Loop
-//3 Create Pumpkin Model Simple
-//4 create throwing system
-5 create shout system like skyrim(fus ro duh, ice form, fire breath, summon cheese wheel)
-6 setup keyobjects for making points
-7 Overlay to put objs in to earn points
-8 points system stored in like a save file
-9 Upgrade Shop
+//3d Character Working FPS
+//Gameplay Loop
+//Create Pumpkin Model Simple
+//create throwing system
+//setup keyobjects for making points
+add quins health system to gun branch
+add quins targatble to gun branch
+add quins Damageinfo to gun branch
+be able to smash pumpkins
+points system stored in like a save file
+Overlay to put objs in to earn points
+create shout system like skyrim(fus ro duh, ice form, fire breath, summon cheese wheel)
+Upgrade Shop
