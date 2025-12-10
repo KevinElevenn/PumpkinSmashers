@@ -1,36 +1,36 @@
+using System;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public class GunSystem : MonoBehaviour
+public abstract class GunSystem : MonoBehaviour
 {
     [SerializeField] public Transform PlayerCameraTransform;
-    public UnityEvent OnGunShoot;
-    public float GunShootCooldown;
-    
-    private float _currentCooldown;
+    [SerializeField] protected float Range = 20f;
+    [SerializeField] protected float Damage = 20f;
+    [SerializeField] protected float Cooldown = 20f;
+    [SerializeField] protected float Duration = 0.5f;
 
-    void Start()
+
+    private float _lastAttackTime;
+
+    public bool TryAttack(Vector3 aimPosition, int team, GameObject instigator)
     {
-        _currentCooldown = GunShootCooldown;
+        if (Time.time < _lastAttackTime + Cooldown) return false;
+        _lastAttackTime = Time.time;
+
+        Attack(aimPosition, team, instigator);
+
+        return true;
     }
 
-    void FixedUpdate()
+    protected virtual void Attack(Vector3 aimPosition, int team, GameObject instigator)
     {
-        _currentCooldown -= Time.deltaTime;
-    }
+        //play sfx
 
-    private void OnLeftClick()
-    {
-        Debug.Log("Left Mouse Has Been Clicked Will Draw Yellow Ray Cast");
-        Debug.DrawRay(PlayerCameraTransform.position, PlayerCameraTransform.forward * 2f, Color.blue, 2f);
-
-            if (_currentCooldown <= 0f)
-            {
-                OnGunShoot?.Invoke();
-                _currentCooldown = GunShootCooldown;
-            }
+        //play animation
     }
+}
 
-    }
 
