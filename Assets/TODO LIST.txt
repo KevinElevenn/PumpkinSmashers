@@ -5,6 +5,9 @@ TODO
 //Create Pumpkin Model Simple
 //create throwing system
 //setup keyobjects for making points
+add quins health system to gun branch
+add quins targatble to gun branch
+add quins Damageinfo to gun branch
 be able to smash pumpkins
 points system stored in like a save file
 Overlay to put objs in to earn points
