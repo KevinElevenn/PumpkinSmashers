@@ -41,6 +41,15 @@
                     "processors": "",
                     "interactions": "Hold,Press,Tap",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Test Damage",
+                    "type": "Button",
+                    "id": "1772ed1a-2a93-483a-b40f-702bcbec4d31",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -85,6 +94,45 @@
                     "processors": "",
                     "groups": "",
                     "action": "RightClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ff4e8bb8-c0bb-4b57-8672-78e9823b0dd9",
+                    "path": "<Keyboard>/backslash",
+                    "interactions": "Press,Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Test Damage",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Debug",
+            "id": "04bdeea3-fc05-4910-9144-97e761752ed7",
+            "actions": [
+                {
+                    "name": "Test Damage",
+                    "type": "Button",
+                    "id": "aee5b76b-a8b1-4096-a35f-6dadceccc777",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "bf16d3ab-486a-4636-84b1-55479f5e383a",
+                    "path": "<Keyboard>/backslash",
+                    "interactions": "Press,Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Test Damage",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
